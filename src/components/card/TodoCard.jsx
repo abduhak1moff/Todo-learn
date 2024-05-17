@@ -13,10 +13,11 @@ export class TodoCard extends Component {
     return (
       <Alert
         variant={colors[importance]}
-        className="d-flex justify-content-between align-items-center"
+        className="d-flex justify-content-center  sm:justify-content-between flex-wrap gap-3 align-items-center"
       >
         <div>
-          <time>{date}</time> <span>{name}</span>
+          <time className="badge bg-danger me-3">{date}</time>
+          <span>{name}</span>
         </div>
         <div>
           <Button
